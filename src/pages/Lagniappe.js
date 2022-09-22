@@ -49,7 +49,7 @@ function Lagniappe() {
           <h3> Official Website of Yiseul LeMieux</h3>
           <img
             className="lagniappe__websites"
-            src="yiseulScreenShot.png"
+            src="yiseulNew.png"
             alt="index of heartbreak"
           />
         </div>
@@ -73,13 +73,50 @@ function Lagniappe() {
           <img
             className="lagniappe__websites"
             src="midi.png"
-            alt="index of heartbreak"
+            alt="my midi instrument"
           />
         </div>
       </a>
-
-      {/* Salty Dog */}
-      {/* toothbrush */}
+      <a href="https://toothbrush-18e6e.web.app" target="blank">
+        <div className="yiseulWebsite__container">
+          <h3> Toothbrush Activity</h3>
+          <img
+            className="lagniappe__websites"
+            src="toothbrush.png"
+            alt="Toothbrush Activity"
+          />
+        </div>
+      </a>
+      <a href="https://voting-450bf.web.app/" target="blank">
+        <div className="yiseulWebsite__container">
+          <h3> UVS Voting Interface</h3>
+          <img
+            className="lagniappe__websites"
+            src="voting.png"
+            alt="the interface from the UVS election"
+          />
+        </div>
+      </a>
+      <a href="https://year-old-boomers.web.app/" target="blank">
+        <div className="yiseulWebsite__container">
+          <h3> 30 Year Old Boomers Band Website</h3>
+          <img
+            className="lagniappe__websites"
+            src="boomers.png"
+            alt=" 30 Year Old Boomers Band Website"
+          />
+        </div>
+      </a>
+      <a href="https://laeec.com/" target="blank">
+        <div className="yiseulWebsite__container">
+          <h3> Louisiana Energy Equipment Website</h3>
+          <img
+            className="lagniappe__websites"
+            src="laeec.png"
+            alt=" Louisiana Energy Equipment Website"
+          />
+        </div>
+      </a>
     </div>
   );
 }
