@@ -87,6 +87,16 @@ function Lagniappe() {
           />
         </div>
       </a>
+      <a href="https://yiseul.web.app/" target="blank">
+        <div className="yiseulWebsite__container">
+          <h3> Official Website of Yiseul LeMieux(version 1.0)</h3>
+          <img
+            className="lagniappe__websites"
+            src="yiseulScreenShot.png"
+            alt="older version of Yiseul LeMieux's website"
+          />
+        </div>
+      </a>
       <a href="https://voting-450bf.web.app/" target="blank">
         <div className="yiseulWebsite__container">
           <h3> UVS Voting Interface</h3>
