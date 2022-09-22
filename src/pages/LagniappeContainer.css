@@ -1,0 +1,11 @@
+.navLagContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 800px) {
+  .navLagContainer {
+    flex-direction: column;
+  }
+}

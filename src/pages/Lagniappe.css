@@ -1,0 +1,33 @@
+.lagniappe__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 7vw;
+  margin-bottom: 10vw;
+  row-gap: 3vw;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.lagniappe__websites {
+  width: 25vw;
+}
+
+.windTree__description {
+  width: 80%;
+}
+
+.indexOfHeartbreak__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.yiseulWebsite__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

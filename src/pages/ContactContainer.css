@@ -1,0 +1,21 @@
+.navContactContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact__contactHomeContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6vw;
+  align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .navContactContainer {
+    flex-direction: column;
+  }
+
+  .contact__contactHomeContainer {
+    margin-left: unset;
+  }
+}

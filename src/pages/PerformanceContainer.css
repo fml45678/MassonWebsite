@@ -1,0 +1,10 @@
+.navPerformanceContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 800px) {
+  .navPerformanceContainer {
+    flex-direction: column;
+  }
+}

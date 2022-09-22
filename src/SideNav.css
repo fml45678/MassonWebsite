@@ -1,0 +1,58 @@
+.flex__container {
+  display: flex;
+  padding-right: 25vw;
+}
+
+.sidenav {
+  height: 100%;
+  width: 260px;
+  position: fixed;
+  flex: 1 1 30%;
+  z-index: 100;
+  left: 0;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: yellow;
+}
+
+@media only screen and (max-width: 800px) {
+  .sidenav {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    align-items: center;
+    left: initial;
+    overflow: initial;
+    padding-bottom: 20px;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .flex__container {
+    padding-right: initial;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .sidenav a {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .sidenav a:hover {
+    color: black;
+  }
+}
