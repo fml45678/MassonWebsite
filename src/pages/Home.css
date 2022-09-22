@@ -1,7 +1,7 @@
 .homeScreen {
   display: flex;
   width: 100%;
-  padding-top: 20vh;
+  padding-top: 0vh;
 
   justify-content: center;
   z-index: 1;
