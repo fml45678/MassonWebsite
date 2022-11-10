@@ -4,7 +4,7 @@ import "./Contact.css";
 function Contact() {
   return (
     <div className="contact__container">
-      <h4 className="contact__email">massonlemieux [ at ] gmail [ dot ] com</h4>
+      <h4 className="contact__email">info [ at ] massonlemieux [ dot ] com</h4>
     </div>
   );
 }

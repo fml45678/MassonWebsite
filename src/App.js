@@ -9,6 +9,8 @@ import "./App.css";
 import Helmet from "react-helmet";
 import { analytics } from "./pages/firebase";
 import { lazy, Suspense } from "react";
+import Header from "./pages/Header";
+import SideNav from "./SideNav";
 
 const HomeContainer = lazy(() => import("./pages/HomeContainer"));
 const PerformanceContainer = lazy(() => import("./pages/PerformanceContainer"));
@@ -16,6 +18,7 @@ const AboutContainer = lazy(() => import("./pages/AboutContainer"));
 const ContactContainer = lazy(() => import("./pages/ContactContainer"));
 const LagniappeContainer = lazy(() => import("./pages/LagniappeContainer"));
 const MidiInstrument = lazy(() => import("./pages/MidiInstrument"));
+const Podcast = lazy(() => import("./pages/Podcast"));
 
 function App() {
   return (
@@ -29,17 +32,26 @@ function App() {
         />
       </Helmet>
 
-      <div className="app">
-        <Switch>
-          <Suspense fallback={<div className="fallback">Loading</div>}>
-            <Route exact path="/midiinstrument" component={MidiInstrument} />
-            <Route exact path="/about" component={AboutContainer} />
-            <Route exact path="/performance" component={PerformanceContainer} />
-            <Route exact path="/lagniappe" component={LagniappeContainer} />
-            <Route exact path="/contact" component={ContactContainer} />
-            <Route exact path="/" component={HomeContainer} />
-          </Suspense>
-        </Switch>
+      <div>
+        <Header />
+        <div className="app">
+          <SideNav />
+          <Switch>
+            <Suspense fallback={<div className="fallback">Loading</div>}>
+              <Route exact path="/midiinstrument" component={MidiInstrument} />
+              <Route exact path="/podcast" component={Podcast} />
+              <Route exact path="/about" component={AboutContainer} />
+              <Route
+                exact
+                path="/performance"
+                component={PerformanceContainer}
+              />
+              <Route exact path="/lagniappe" component={LagniappeContainer} />
+              <Route exact path="/contact" component={ContactContainer} />
+              <Route exact path="/" component={HomeContainer} />
+            </Suspense>
+          </Switch>
+        </div>
       </div>
     </div>
   );

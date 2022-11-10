@@ -8,7 +8,7 @@ function SideNav() {
       <div className="sidenav">
         <div className="sideNav__links">
           <Link to="/performance">
-            <h2 className="sideNav__performance">Performance</h2>
+            <h2 className="sideNav__performance">Music</h2>
           </Link>
         </div>
 
@@ -21,6 +21,12 @@ function SideNav() {
         <div className="sideNav__links">
           <Link to="/lagniappe">
             <h2 className="sideNav__lagniappe">Tech</h2>
+          </Link>
+        </div>
+
+        <div className="sideNav__links">
+          <Link to="/podcast">
+            <h2 className="sideNav__lagniappe">Podcast</h2>
           </Link>
         </div>
 
