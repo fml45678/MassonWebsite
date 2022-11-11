@@ -12,11 +12,11 @@ import { lazy, Suspense } from "react";
 import Header from "./pages/Header";
 import SideNav from "./SideNav";
 
-const HomeContainer = lazy(() => import("./pages/HomeContainer"));
-const PerformanceContainer = lazy(() => import("./pages/PerformanceContainer"));
-const AboutContainer = lazy(() => import("./pages/AboutContainer"));
-const ContactContainer = lazy(() => import("./pages/ContactContainer"));
-const LagniappeContainer = lazy(() => import("./pages/LagniappeContainer"));
+const Home = lazy(() => import("./pages/Home"));
+const Performance = lazy(() => import("./pages/Performance"));
+const About = lazy(() => import("./pages/About"));
+const Contact = lazy(() => import("./pages/Contact"));
+const Lagniappe = lazy(() => import("./pages/Lagniappe"));
 const MidiInstrument = lazy(() => import("./pages/MidiInstrument"));
 const Podcast = lazy(() => import("./pages/Podcast"));
 
@@ -40,15 +40,11 @@ function App() {
             <Suspense fallback={<div className="fallback">Loading</div>}>
               <Route exact path="/midiinstrument" component={MidiInstrument} />
               <Route exact path="/podcast" component={Podcast} />
-              <Route exact path="/about" component={AboutContainer} />
-              <Route
-                exact
-                path="/performance"
-                component={PerformanceContainer}
-              />
-              <Route exact path="/lagniappe" component={LagniappeContainer} />
-              <Route exact path="/contact" component={ContactContainer} />
-              <Route exact path="/" component={HomeContainer} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/performance" component={Performance} />
+              <Route exact path="/lagniappe" component={Lagniappe} />
+              <Route exact path="/contact" component={Contact} />
+              <Route exact path="/" component={Home} />
             </Suspense>
           </Switch>
         </div>
