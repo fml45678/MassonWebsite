@@ -19,6 +19,7 @@ const Contact = lazy(() => import("./pages/Contact"));
 const Lagniappe = lazy(() => import("./pages/Lagniappe"));
 const MidiInstrument = lazy(() => import("./pages/MidiInstrument"));
 const Podcast = lazy(() => import("./pages/Podcast"));
+const LinkTree = lazy(() => import("./pages/LinkTree"));
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
               <Route exact path="/performance" component={Performance} />
               <Route exact path="/lagniappe" component={Lagniappe} />
               <Route exact path="/contact" component={Contact} />
+              <Route exact path="/links" component={LinkTree} />
               <Route exact path="/" component={Home} />
             </Suspense>
           </Switch>
