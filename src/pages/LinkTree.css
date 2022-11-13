@@ -1,0 +1,9 @@
+.links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vw;
+  align-items: center;
+}
+li {
+  list-style: none;
+}
