@@ -1,18 +1,21 @@
 .links {
   display: flex;
   flex-direction: column;
-  row-gap: 2vw;
+  row-gap: 3vw;
   align-items: center;
 }
 li {
   list-style: none;
   padding: 1.3vw;
-  border: 0.34vw solid rgb(8, 8, 199);
+  border: 0.64vw solid #0053e1;
   border-radius: 3vw;
-  background-color: rgba(248, 236, 8, 0.914);
+  background-color: #fef335;
+  width: 60vw;
+  text-align: center;
 }
 li > a {
   text-decoration: none;
-  color: rgb(22, 193, 22);
+  color: #ff4617;
   font-weight: 700;
+  letter-spacing: 0.7vw;
 }
