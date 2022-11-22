@@ -6,7 +6,7 @@ function Performance() {
     <div className="performance">
       <div className="performance__flexContainer">
         <h2>Teaching</h2>
-        <a target="blank" href="https://lemieuxstudios.com">
+        <a id="lessons" target="blank" href="https://lemieuxstudios.com">
           click here for guitar lessons
         </a>
         <h2>Performance</h2>
