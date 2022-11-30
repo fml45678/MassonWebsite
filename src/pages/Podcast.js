@@ -33,6 +33,8 @@ function Podcast() {
       <a href="https://www.youtube.com/channel/UC_Vy5Ay28Op5LbMVINnsR8Q">
         <span style={{ color: "red" }}>YouTube</span>
       </a>
+      <h1>Want to sponsor the Podcast?</h1>
+      <h2>email info@massonlemieux.com</h2>
     </div>
   );
 }
